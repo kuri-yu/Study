@@ -1,0 +1,8 @@
+python3 -m venv myenv
+source myenv/bin/activate
+pip install --upgrade pip
+pip install jupyter ipykernel pandas numpy scikit-learn matplotlib seaborn
+ipython kernel install --user --name=StudyKY_venv --display-name=StudyKY_venv
+pip install scikit-learn==1.1.0
+pip install mecab-python3==0.7
+pip install pyarrow
