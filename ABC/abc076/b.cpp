@@ -14,16 +14,16 @@ typedef unsigned long long int ull;
 typedef long double ld;
 
 int main(){
-    ll n;
-    string s;
-    cin >> n;
+    ll n,k;
+    cin >> n >> k;
+    ll num = 1;
     for(ll i=0; i<n; i++){
-        cin >> s;
-        if(s == "Y"){
-            cout << "Four" << endl;
-            return 0;
+        if(num*2>num+k){
+            num += k;
+        }else{
+            num *= 2;
         }
     }
-    cout << "Three" << endl;
+    cout << num << endl;
     return 0;
 }

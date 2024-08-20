@@ -14,16 +14,9 @@ typedef unsigned long long int ull;
 typedef long double ld;
 
 int main(){
-    ll n;
+    ll i;
     string s;
-    cin >> n;
-    for(ll i=0; i<n; i++){
-        cin >> s;
-        if(s == "Y"){
-            cout << "Four" << endl;
-            return 0;
-        }
-    }
-    cout << "Three" << endl;
+    cin >> s >> i;
+    cout << s.at(i-1) << endl;
     return 0;
 }
